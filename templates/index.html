@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Lilly Ever After: Education | Advocacy | Independence</title>
+    {% endif %} {% if description %}
+    <meta name="description" content="{{ description }}" />
+    {% else %}
+    <meta
+      name="description"
+      content="Lilly Ever After is a story of independence, empowerment, and security for the modern woman."
+    />
+    {% endif %}
+    <meta name="author" content="House Asterion" />
+    <!-- CSS -->
+    <!-- Vendor CSS -->
+    <!-- https://github.com/necolas/normalize.css/ -->
+    <link
+      rel="stylesheet"
+      href="{% static 'main/css/vendor/normalize.css' %}"
+    />
+    <!-- Site CSS -->
+    <!--
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/hb_menu.css' %}" />     
+  -->
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/sitenav.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'main/css/footer.css' %}" />
+    <!-- JS -->
+    <!-- Vendor JavaScript -->
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/edb58dd1dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- https://github.com/Modernizr/Modernizr -->
+    <script src="{% static 'main/js/vendor/modernizr-3.12.0.min.js' %}"></script>
+    <!-- Site JS (deferred) -->
+    <script src="{% static 'main/js/site.js' %}" defer></script>
+
+    <!-- additional header info -->
+    {% block extra-head %}{% endblock %}
+    <!-- end additional header info -->
+    <!-- media calls last -->
+    <link rel="stylesheet" href="{% static 'main/css/media.css' %}" />
+  </head>
+
+  <body id="top">
+
+    {% include 'inc/hb_menu.html' %}
+
+    <div class="site-container" id="siteContainer">
+  
+      <header class="site-header">
+        {% include 'inc/inc_header.html' %}
+      </header>
+
+      <main class="main-content-area">
+        {% block main-content %}{% endblock %}
+      </main>
+
+      <footer>{% include 'inc/inc_footer.html' %}</footer>
+
+    </div>
+  </body>
+</html>

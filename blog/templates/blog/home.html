@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+ {% load static %}
+  {% block main-content %}
+<!-- page content -->
+
+<div class="left-content">
+  test
+</div>
+
+<div class="content">
+
+  <h1>Blog Home</h1>
+<div>
+  <a href="{% url 'blog:post_list' %}">Blog List</a>
+</div>
+
+<aside class="blog-sidebar">
+  {% include 'blog/inc/inc_sidebar.html' %}
+</aside>
+
+
+</div>
+
+
+
+
+{% endblock %}

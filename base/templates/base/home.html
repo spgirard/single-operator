@@ -1,0 +1,185 @@
+{% extends 'index.html' %} {% load static %} 
+{% block extra-head %}
+<link rel="stylesheet" href="{% static 'base/css/base.css' %}" />
+{% endblock %}
+{% block main-content %}
+<!-- page content -->
+
+<article class="box">
+                
+  <div class="box-image-frame">
+
+      <img src="{% static 'base/img/cooking.jpg' %}" />
+
+  </div>
+
+  <div class="box-content bg-aqua">
+  
+      <h1>Hi, I'm Lilly <i class="fa-regular fa-face-kiss-wink-heart"></i></h1>
+
+      <p>
+          Ten years ago, I was a young mother of two at the tail-end of an abusive and controlling relationship.  My husband's addiction had left us deeply in dept, and I felt completely hopeless.  Busy with babies and not career, I had no idea how I was ever going to afford independence for myself, and safety for my children.
+      </p>
+
+      <p>
+          About that time, a friend gave me a tip that started me down a road to freedom on my own terms.  Back then I laughed (and almost laughed her off!)  I am glad I didn't.  Today, I own my own home, and my children have a shot at the kind of life I would have hoped for.
+      </p>
+
+      <p>
+          Sometimes lies and addiction can take away one "happily ever after" but you can make another one.  It was a lot of work, but I did it, and you can too.
+      </p>
+
+      <p class="box-cta">
+          <a href="#">Curious about me?</a>
+      </p>
+
+  </div>
+
+</article>         
+
+<article class="box">
+
+  <div class="box-image-frame">
+  
+      <img src="{% static 'base/img/phone2.jpg' %}" />
+  
+  </div>
+
+  <div class="box-content bg-dk-aqua">
+  
+  <h2>A tip from a friend</h2>
+  
+  <p>
+      xxx
+  </p>
+  
+  <p>
+      xxx
+  </p>
+  
+  <p>
+      xxx
+  </p>
+  
+  <p class="box-cta">
+      <a href="#">More about what she said...</a>
+  </p>
+  
+  </div>
+
+</article>
+
+<article class="box">            
+  
+  <div class="box-image-frame">
+  
+      <img src="{% static 'base/img/bite.jpg' %}" />
+  
+  </div>
+  
+  <div class="box-content bg-lt-aqua">
+  
+      <h2>Okay... It's Phone Sex...</h2>
+  
+      <p class="content-p">
+          xxx
+      </p>
+  
+      <p class="content-p">
+          xxx
+      </p>
+  
+      <p class="content-p">
+          xxx
+      </p>
+  
+      <p class="action-call">
+          <a href="#">Curious about phone sex?</a>
+      </p>
+  
+  </div>
+
+</article>
+
+<div class="three-box">
+  <article class="small-box">
+      <a href="{% url 'blog:post_list' %}">Blog</a>
+  </article>                
+  <article class="small-box">
+    <a href="{% url 'faq:faq' %}">Question</a>
+  </article>
+  <article class="small-box">
+    <a href="{% url 'resources:resources' %}">Resources</a>
+  </article>
+
+</div>
+<!--
+  
+  <div class="content-title">
+    <h1>Welcome to Independence!</h1>
+  </div>
+  <div class="content-content">
+    <p>
+      Thank you for your interest in this opportunity. I am sure you have come
+      here because you have <a href="#">questions</a>, or with a desire to
+      <a href="#">get started</a> as quickly as possible. In either case, I
+      created this tool to organize your journey. I think it is the most
+      effective way to connect us.
+    </p>
+    <p>
+      It is my goal to help you discover if this is the right opportunity for
+      you, and it is my job to determine if you might be the right person for my
+      team. I hope the answer to both questions is "yes".
+    </p>
+    <p class="heddy">
+      I look forward to hearing from you,
+      <br />
+      - Heddy
+    </p>
+
+    <div class="content-inset-container clearfix">
+      <div class="main-content-inset-title">
+        <h2>Opportunity is Calling</h2>
+      </div>
+      <div class="main-content-inset-content">
+        <div class="main-content-inset-small">
+          <h3>Absolutely No:</h3>
+          <hr />
+          <ul>
+            <li>MLM</li>
+            <li>Investment</li>
+            <li>Experience Required</li>
+          </ul>
+          <h3>Absolutely Yes:</h3>
+          <hr />
+          <ul>
+            <li>100% Remote</li>
+            <li>Flexible Schedule</li>
+            <li>$500 - $1500 per week</li>
+            <li>Training Provided</li>
+          </ul>
+        </div>
+        <div class="main-content-inset-small">
+          <p>
+            I am contracting with adult voice actresses to create and play fun
+            and engaging characters on my established and successful team.
+          </p>
+          <p>
+            The work is 100% phone and Internet based. You will begin by taking
+            incoming calls about sexy fun and fantasy from new and existing
+            customers. From there, you will learn how to advertise, market, and
+            grow your business to meet your income goals.
+          </p>
+          <p>
+            The successful candidate is a motivated, capable, and creative woman
+            who is ready to work to build independence and success.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+
+{% endblock %}
